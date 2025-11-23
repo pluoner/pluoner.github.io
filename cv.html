@@ -1,185 +1,255 @@
 <!DOCTYPE html>
 <div class="paper">
-<div id="lang-switcher" style="text-align:right; padding:10px;">
-  <button onclick="setLang('sv')">SV</button>
-  <button onclick="setLang('en')">EN</button>
-</div>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CV Jonathan Gerholm</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="res/addon.css">
-<script src="./CV Jonathan Gerholm_files/casual-markdown.js.nedladdning"></script>
-<script>
-  function setLang(lang) {
-    document.querySelector('.lang-sv').style.display = (lang === 'sv') ? 'block' : 'none';
-    document.querySelector('.lang-en').style.display = (lang === 'en') ? 'block' : 'none';
-  }
-</script>
-<style>  
-  body { line-height:1.5; margin:auto; padding:3px; max-width:1024px; display:none; FONT-FAMILY:"SEGOE UI",ARIAL }
-  h1  { font-size:200%; padding:16px; border:1px solid lightgrey; COLOR:WHITE; BACKGROUND: LINEAR-GRADIENT(TO BOTTOM RIGHT, rgb(8, 80, 46), rgb(0, 185, 40)) }
-  h2  { border-bottom:1px solid grey; padding:2px; COLOR: rgb(8, 80, 46)}
-  a:link { color:white; text-decoration: none}
-  a:hover { color:white; text-decoration: underline}
-  a:visited { color:white; text-decoration: none}
-</style>
+  <div id="lang-switcher" style="text-align:right; padding:10px;">
+    <button onclick="setLang('sv')">SV</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
+  <html>
 
-</head>
-<body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display=&#39;block&#39;;" cz-shortcut-listen="true" style="display: block;"><div class="markdown">
-<p>
-<!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
-</p><p>
-<span style="float:right;padding:6px;color:white"> 
-  <a href="mailto:jonathan.gerholm@gmail.com">Jonathan Gerholm</a> <br> +46 70 039 23 41 <br> <a href="https://github.com/pluoner">github.com/pluoner</a>
-</span>
-<span style="float:right;padding:6px; width:20px">
-  <img id="mail" src="res/mail.svg" style="float:right; padding:2px; width:20px">
-  <img id="phone" src="res/phone.svg" style="float:right; padding:2px; width:20px">
-  <img id="github" src="res/github.svg" style="float:right; padding:2px; width:20px">
-</span>
-</p><p>
-</p><h1>Jonathan Gerholm</h1>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CV Jonathan Gerholm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./res/styling.css">
+    <script>
+      function setLang(lang) {
+        document.querySelector('.lang-sv').style.display = (lang === 'sv') ? 'block' : 'none';
+        document.querySelector('.lang-en').style.display = (lang === 'en') ? 'block' : 'none';
+      }
+    </script>
+    <style>
+      body {
+        line-height: 1.5;
+        margin: auto;
+        padding: 3px;
+        max-width: 1024px;
+        display: none;
+        FONT-FAMILY: "SEGOE UI", ARIAL
+      }
 
-<div class="lang-sv">
-## SAMMANFATTNING
+      h1 {
+        font-size: 200%;
+        padding: 16px;
+        border: 1px solid lightgrey;
+        COLOR: WHITE;
+        BACKGROUND: LINEAR-GRADIENT(TO BOTTOM RIGHT, rgb(8, 80, 46), rgb(0, 185, 40))
+      }
 
-* Erfaren IT-professionell med 15 års mångsidig erfarenhet inom utveckling, projektledning och systemförvaltning.
-* 5 års expertis inom fullstackutveckling i affärssystemet Marathon samt avancerad rapportprogrammering i XSLT.
-* Ledning av både interna och externa nyutvecklingsprojekt samt framgångsrika systeminstallationer för kunder i Sverige, Nederländerna och Serbien.
-* Specialist på systemanpassning och användarutbildning, med stark förmåga att förmedla tekniska lösningar till kravställare och team.
+      h2 {
+        border-bottom: 1px solid grey;
+        padding: 2px;
+        COLOR: rgb(8, 80, 46)
+      }
 
-<h2>TEKNISKA FÄRDIGHETER</h2>
-<ul>
-<li>Programmeringsspråk: Java, XSLT, SQL</li>
-<li>Verktyg och miljöer: VS Code, Jira, Bitbucket, GIT, Excel, Marathon</li>
-<li>Databaser: LMDB, MySQL, MongoDB</li>
-<li>Plattformar: Linux (Ubuntu, Desktop/Server), Windows, Java Spring</li>
-<li>Övriga kunskaper: Rust, Lisp, C#, PHP, JavaScript, LaTeX</li>
-</ul>
+      a:link {
+        color: white;
+        text-decoration: none
+      }
 
-<h2>ERFARENHET</h2>
-<span style="float:right;font-weight:700">Aug 2015 - Nu </span>
-<h3>KASE TECHNOLOGIES</h3>
-<u>FULLSTACK JAVAUTVECKLARE</u>
-<ul>
-<li>Designade, utvecklade och förbättrade samtliga delar av ERP-systemet Marathon, vilket effektiviserade finans- och projektredovisning samt mediaplanering.</li>
-<li>Arbetade nära projektledare och kravställare för att leverera högkvalitativa, kundanpassade lösningar.</li>
-<li>Levererade snabb support och felsökning, vilket ökade stabilitet och användarnöjdhet.</li>
-<li>Implementerade tekniska lösningar och scripts på kundservrar (Ubuntu) för effektiv produktion och automation.</li>
-</ul>
+      a:hover {
+        color: white;
+        text-decoration: underline
+      }
 
-<u>XSLT-UTVECKLARE</u>
-<ul>
-<li>Skapade och implementerade rapporter, blanketter och mallar som effektiviserade kundernas arbetsflöden.</li>
-<li>Automatiserade datatransfer och export till externa system (CSV, XML, XLS/XLSX, flatfiles), vilket sparade tid och minskade fel.</li>
-</ul>
+      a:visited {
+        color: white;
+        text-decoration: none
+      }
+    </style>
 
-<u>PROJEKTLEDARE INSTALLATION OCH UTVECKLING</u>
-<ul>
-<li>Ledde systeminstallationer av nya kunder i Nederländerna (250 användare), Serbien (100 användare) och Sverige med framgångsrikt resultat.</li>
-<li>Var primär kontaktperson för kunders utvecklingsförfrågningar: lösningsförslag, tekniska specifikationer, estimat, testning och dokumentation.</li>
-</ul>
+  </head>
 
-<span style="float:right;font-weight:700">Apr 2012 - Aug 2015 </span>
-<h3>Konsult DFIND IT</h3>
-<u>Lantmännen</u>
-<ul>
-<li>Systemspecialist för HRM-systemet NuView HR; optimerade konfigurationer och förbättrade användarflöden.</li>
-<li>Utbildade nya användare och säkrade effektiv adoption av systemet.</li>
-<li>Buggrapporterade och samarbetade med leverantörer och interna kravställare för smidigare processer.</li>
-<li>Automatiserade och konfigurerade systemlösningar med JavaScript och SQL, vilket förbättrade arbetsflöden.</li>
-</ul>
+  <body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display=&#39;block&#39;;"
+    cz-shortcut-listen="true" style="display: block;">
+    <div class="markdown">
+      <p>
+        <!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
+      </p>
+      <p>
+        <span style="float:right;padding:6px;color:white">
+          <a href="mailto:jonathan.gerholm@gmail.com">Jonathan Gerholm</a> <br> +46 70 039 23 41 <br> <a
+            href="https://github.com/pluoner">github.com/pluoner</a>
+        </span>
+        <span style="float:right;padding:6px; width:20px">
+          <img id="mail" src="./res/mail.svg" style="float:right; padding:2px; width:20px">
+          <img id="phone" src="./res/phone.svg" style="float:right; padding:2px; width:20px">
+          <img id="github" src="./res/github.svg" style="float:right; padding:2px; width:20px">
+        </span>
+      </p>
+      <p>
+      </p>
+      <h1>Jonathan Gerholm</h1>
 
-<u>Uppdrag åt Eriksson</u>
-<ul>
-<li>Secondline-support och ansvar för roller och behörigheter i Ericssons globala ERP-system (SAP).</li>
-<li>Felsökning, databashantering (Microsoft Access) och processoptimering med fokus på hållbara lösningar.</li>
-<li>Drivande i att identifiera och implementera förbättringar i rutiner och arbetsmetoder.</li>
-</ul>
+      <div class="lang-sv">
+        <h2>SAMMANFATTNING</h2>
+        <ul>
+          <li>Erfaren IT-professionell med 15 års mångsidig erfarenhet inom utveckling, projektledning och
+            systemförvaltning.</li>
+          <li>5 års expertis inom fullstackutveckling i affärssystemet Marathon samt avancerad rapportprogrammering i
+            XSLT.</li>
+          <li>Ledning av både interna och externa nyutvecklingsprojekt samt framgångsrika systeminstallationer för
+            kunder i Sverige, Nederländerna och Serbien.</li>
+          <li>Specialist på systemanpassning och användarutbildning, med stark förmåga att förmedla tekniska lösningar
+            till kravställare och team.</li>
+        </ul>
 
-<h2>UTBILDNING</h2>
-<ul>
-<li>Drygt 90 högskolepoäng inom matematik, datavetenskap, fysik och ekonomi (Teknisk Fysik, Civilingenjör).</li>
-<li>Kortare kurser i datavetenskap och humaniora, inklusive Stockholms Historia (kvällskurs).</li>
-</ul>
+        <h2>TEKNISKA FÄRDIGHETER</h2>
+        <ul>
+          <li>Programmeringsspråk: Java, XSLT, SQL</li>
+          <li>Verktyg och miljöer: VS Code, Jira, Bitbucket, GIT, Excel, Marathon</li>
+          <li>Databaser: LMDB, MySQL, MongoDB</li>
+          <li>Plattformar: Linux (Ubuntu, Desktop/Server), Windows, Java Spring</li>
+          <li>Övriga kunskaper: Rust, Lisp, C#, PHP, JavaScript, LaTeX</li>
+        </ul>
 
-<h2>ÖVRIGT</h2>
-<ul>
-<li>Språk: Svenska, Engelska</li>
-<li>Tillgänglighet: 2 månaders uppsägningstid</li>
-<li>Referenser lämnas på begäran</li>
-<li>StuddyBuddy i matematik</li>
-</ul>
-</div>
-<div class="lang-en">
-<h2>SUMMARY</h2>
-<ul>
-<li>Experienced IT professional with 15 years of versatile expertise across development, project management, and system administration.</li>
-<li>5 years of fullstack development experience in the Marathon ERP system and advanced report programming in XSLT.</li>
-<li>Led both internal and external software development projects as well as successful system deployments for clients in Sweden, the Netherlands, and Serbia.</li>
-<li>Specialist in system customization and user training, with strong ability to communicate technical solutions to stakeholders and teams.</li>
-</ul>
+        <h2>ERFARENHET</h2>
+        <span style="float:right;font-weight:700">Aug 2015 - Nu </span>
+        <h3>KASE TECHNOLOGIES</h3>
+        <u>FULLSTACK JAVAUTVECKLARE</u>
+        <ul>
+          <li>Designade, utvecklade och förbättrade samtliga delar av ERP-systemet Marathon, vilket effektiviserade
+            finans- och projektredovisning samt mediaplanering.</li>
+          <li>Arbetade nära projektledare och kravställare för att leverera högkvalitativa, kundanpassade lösningar.
+          </li>
+          <li>Levererade snabb support och felsökning, vilket ökade stabilitet och användarnöjdhet.</li>
+          <li>Implementerade tekniska lösningar och scripts på kundservrar (Ubuntu) för effektiv produktion och
+            automation.</li>
+        </ul>
 
-<h2>TECHNICAL SKILLS</h2>
-<ul>
-<li>Programming languages: Java, XSLT, SQL</li>
-<li>Tools & environments: VS Code, Jira, Bitbucket, GIT, Excel, Marathon</li>
-<li>Databases: LMDB, MySQL, MongoDB</li>
-<li>Platforms: Linux (Ubuntu, Desktop/Server), Windows, Java Spring</li>
-<li>Other knowledge: Rust, Lisp, C#, PHP, JavaScript, LaTeX</li>
-</ul>
+        <u>XSLT-UTVECKLARE</u>
+        <ul>
+          <li>Skapade och implementerade rapporter, blanketter och mallar som effektiviserade kundernas arbetsflöden.
+          </li>
+          <li>Automatiserade datatransfer och export till externa system (CSV, XML, XLS/XLSX, flatfiles), vilket sparade
+            tid och minskade fel.</li>
+        </ul>
 
-<h2>EXPERIENCE</h2>
-<span style="float:right;font-weight:700">Aug 2015 - Present </span>
-<h3>KASE TECHNOLOGIES</h3>
-<u>FULLSTACK JAVA DEVELOPER</u>
-<ul>
-<li>Designed, developed, and enhanced all modules of the Marathon ERP system, streamlining finance, project accounting, and media planning processes.</li>
-<li>Collaborated closely with project managers and stakeholders to deliver high-quality, client-tailored solutions.</li>
-<li>Provided fast support and troubleshooting, improving system stability and user satisfaction.</li>
-<li>Implemented technical solutions and scripts on client servers (Ubuntu) for efficient production and automation.</li>
-</ul>
+        <u>PROJEKTLEDARE INSTALLATION OCH UTVECKLING</u>
+        <ul>
+          <li>Ledde systeminstallationer av nya kunder i Nederländerna (250 användare), Serbien (100 användare) och
+            Sverige med framgångsrikt resultat.</li>
+          <li>Var primär kontaktperson för kunders utvecklingsförfrågningar: lösningsförslag, tekniska specifikationer,
+            estimat, testning och dokumentation.</li>
+        </ul>
 
-<u>XSLT DEVELOPER</u>
-<ul>
-<li>Created and implemented reports, forms, and templates to optimize client workflows.</li>
-<li>Automated data transfers and exports to external systems (CSV, XML, XLS/XLSX, flatfiles), saving time and reducing errors.</li>
-</ul>
+        <span style="float:right;font-weight:700">Apr 2012 - Aug 2015 </span>
+        <h3>Konsult DFIND IT</h3>
+        <u>Lantmännen</u>
+        <ul>
+          <li>Systemspecialist för HRM-systemet NuView HR; optimerade konfigurationer och förbättrade användarflöden.
+          </li>
+          <li>Utbildade nya användare och säkrade effektiv adoption av systemet.</li>
+          <li>Buggrapporterade och samarbetade med leverantörer och interna kravställare för smidigare processer.</li>
+          <li>Automatiserade och konfigurerade systemlösningar med JavaScript och SQL, vilket förbättrade arbetsflöden.
+          </li>
+        </ul>
 
-<u>PROJECT MANAGER – INSTALLATION & DEVELOPMENT</u>
-<ul>
-<li>Led successful system deployments for new clients in the Netherlands (250 users), Serbia (100 users), and Sweden.</li>
-<li>Served as primary contact for client development requests, including solution proposals, technical specifications, estimations, testing, and documentation.</li>
-</ul>
+        <u>Uppdrag åt Eriksson</u>
+        <ul>
+          <li>Secondline-support och ansvar för roller och behörigheter i Ericssons globala ERP-system (SAP).</li>
+          <li>Felsökning, databashantering (Microsoft Access) och processoptimering med fokus på hållbara lösningar.
+          </li>
+          <li>Drivande i att identifiera och implementera förbättringar i rutiner och arbetsmetoder.</li>
+        </ul>
 
-<span style="float:right;font-weight:700">Apr 2012 - Aug 2015 </span>
-<h3>Consultant DFIND IT</h3>
-<u>Lantmännen</u>
-<ul>
-<li>System specialist for the NuView HRM system; optimized configurations and improved user workflows.</li>
-<li>Trained new users and ensured efficient system adoption.</li>
-<li>Reported bugs and collaborated with vendors and internal stakeholders to streamline processes.</li>
-<li>Automated and configured system solutions using JavaScript and SQL, enhancing workflow efficiency.</li>
-</ul>
+        <h2>UTBILDNING</h2>
+        <ul>
+          <li>Drygt 90 högskolepoäng inom matematik, datavetenskap, fysik och ekonomi (Teknisk Fysik, Civilingenjör).
+          </li>
+          <li>Kortare kurser i datavetenskap och humaniora, inklusive Stockholms Historia (kvällskurs).</li>
+        </ul>
 
-<u>Assignment for Ericsson</u>
-<ul>
-<li>Secondline support and responsibility for roles and permissions in Ericsson’s global ERP system (SAP).</li>
-<li>Troubleshooting, database maintenance (Microsoft Access), and process optimization with a focus on sustainable solutions.</li>
-<li>Proactively identified and implemented improvements in routines and work methods.</li>
-</ul>
+        <h2>ÖVRIGT</h2>
+        <ul>
+          <li>Språk: Svenska, Engelska</li>
+          <li>Tillgänglighet: 2 månaders uppsägningstid</li>
+          <li>Referenser lämnas på begäran</li>
+          <li>StuddyBuddy i matematik</li>
+        </ul>
+      </div>
+      <div class="lang-en">
+        <h2>SUMMARY</h2>
+        <ul>
+          <li>Experienced IT professional with 15 years of versatile expertise across development, project management,
+            and system administration.</li>
+          <li>5 years of fullstack development experience in the Marathon ERP system and advanced report programming in
+            XSLT.</li>
+          <li>Led both internal and external software development projects as well as successful system deployments for
+            clients in Sweden, the Netherlands, and Serbia.</li>
+          <li>Specialist in system customization and user training, with strong ability to communicate technical
+            solutions to stakeholders and teams.</li>
+        </ul>
 
-<h2>EDUCATION</h2>
-<ul>
-<li>Over 90 university credits in Mathematics, Computer Science, Physics, and Economics (Engineering Physics, Civil Engineering program).</li>
-<li>Short courses in Computer Science and Humanities, including Stockholm History (evening course).</li>
-</ul>
+        <h2>TECHNICAL SKILLS</h2>
+        <ul>
+          <li>Programming languages: Java, XSLT, SQL</li>
+          <li>Tools & environments: VS Code, Jira, Bitbucket, GIT, Excel, Marathon</li>
+          <li>Databases: LMDB, MySQL, MongoDB</li>
+          <li>Platforms: Linux (Ubuntu, Desktop/Server), Windows, Java Spring</li>
+          <li>Other knowledge: Rust, Lisp, C#, PHP, JavaScript, LaTeX</li>
+        </ul>
 
-<h2>OTHER</h2>
-<ul>
-<li>Languages: Swedish, English</li>
-<li>Availability: 2 months’ notice period</li>
-<li>References available upon request</li>
-<li>Math StudyBuddy</li>
-</ul>
-</div>
-</div>
+        <h2>EXPERIENCE</h2>
+        <span style="float:right;font-weight:700">Aug 2015 - Present </span>
+        <h3>KASE TECHNOLOGIES</h3>
+        <u>FULLSTACK JAVA DEVELOPER</u>
+        <ul>
+          <li>Designed, developed, and enhanced all modules of the Marathon ERP system, streamlining finance, project
+            accounting, and media planning processes.</li>
+          <li>Collaborated closely with project managers and stakeholders to deliver high-quality, client-tailored
+            solutions.</li>
+          <li>Provided fast support and troubleshooting, improving system stability and user satisfaction.</li>
+          <li>Implemented technical solutions and scripts on client servers (Ubuntu) for efficient production and
+            automation.</li>
+        </ul>
+
+        <u>XSLT DEVELOPER</u>
+        <ul>
+          <li>Created and implemented reports, forms, and templates to optimize client workflows.</li>
+          <li>Automated data transfers and exports to external systems (CSV, XML, XLS/XLSX, flatfiles), saving time and
+            reducing errors.</li>
+        </ul>
+
+        <u>PROJECT MANAGER – INSTALLATION & DEVELOPMENT</u>
+        <ul>
+          <li>Led successful system deployments for new clients in the Netherlands (250 users), Serbia (100 users), and
+            Sweden.</li>
+          <li>Served as primary contact for client development requests, including solution proposals, technical
+            specifications, estimations, testing, and documentation.</li>
+        </ul>
+
+        <span style="float:right;font-weight:700">Apr 2012 - Aug 2015 </span>
+        <h3>Consultant DFIND IT</h3>
+        <u>Lantmännen</u>
+        <ul>
+          <li>System specialist for the NuView HRM system; optimized configurations and improved user workflows.</li>
+          <li>Trained new users and ensured efficient system adoption.</li>
+          <li>Reported bugs and collaborated with vendors and internal stakeholders to streamline processes.</li>
+          <li>Automated and configured system solutions using JavaScript and SQL, enhancing workflow efficiency.</li>
+        </ul>
+
+        <u>Assignment for Ericsson</u>
+        <ul>
+          <li>Secondline support and responsibility for roles and permissions in Ericsson’s global ERP system (SAP).
+          </li>
+          <li>Troubleshooting, database maintenance (Microsoft Access), and process optimization with a focus on
+            sustainable solutions.</li>
+          <li>Proactively identified and implemented improvements in routines and work methods.</li>
+        </ul>
+
+        <h2>EDUCATION</h2>
+        <ul>
+          <li>Over 90 university credits in Mathematics, Computer Science, Physics, and Economics (Engineering Physics,
+            Civil Engineering program).</li>
+          <li>Short courses in Computer Science and Humanities, including Stockholm History (evening course).</li>
+        </ul>
+
+        <h2>OTHER</h2>
+        <ul>
+          <li>Languages: Swedish, English</li>
+          <li>Availability: 2 months’ notice period</li>
+          <li>References available upon request</li>
+          <li>Math StudyBuddy</li>
+        </ul>
+      </div>
+    </div>
